@@ -33,6 +33,7 @@
         /* Adjust margin or spacing as needed */
         .nav-img {
             margin-right: 10px;
+            align-items: center;
             /* Add some spacing between the image and text */
         }
     </style>
@@ -97,7 +98,7 @@
                 <div class="report-body">
 
                     <div class="detail-container">
-                        <img src="{{ comp_img }}" alt="Company Image"><br>
+                        <img src="{{ comp_img }}" alt="Company Image" class="rounded"><br>
                         {% for job in job_data %}
                         <div class="detail-content">
                             <p>Job id: {{ job[0] }}</p>
