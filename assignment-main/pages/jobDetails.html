@@ -13,10 +13,14 @@
 
     <style>
         .detail-content {
-            border: 2px solid rgb(127, 177, 237);
+            border: 2px solid rgb(34, 93, 163);
             border-radius: 8px;
             padding: 10px;
             margin: 10px;
+        }
+
+        .detail-content:hover {
+            background-color: rgb(203, 228, 229);
         }
 
         .edit-img {
@@ -143,9 +147,8 @@
                                 style="display: none;">
                                 <!-- Editable fields -->
                                 <label for="updated_value">Job description:</label>
-                                <input type="text" id="updated_value" name="updated_value" value="{{ job[3] }}"
-                                    required>
-
+                                <textarea id="updated_value" name="updated_value" rows="4" cols="50" style="padding: 4px;"
+                                placeholder="Please type here..." required></textarea>
                                 <!-- Add a hidden input field to specify the column being updated -->
                                 <input type="hidden" name="column" value="job_desc">
 
@@ -167,8 +170,8 @@
                                 style="display: none;">
                                 <!-- Editable fields -->
                                 <label for="updated_value">Job requirement:</label>
-                                <input type="text" id="updated_value" name="updated_value" value="{{ job[4] }}"
-                                    required>
+                                <textarea id="updated_value" name="updated_value" rows="4" cols="50" style="padding: 4px;"
+                                placeholder="Please type here..." required></textarea>
 
                                 <!-- Add a hidden input field to specify the column being updated -->
                                 <input type="hidden" name="column" value="job_req">
