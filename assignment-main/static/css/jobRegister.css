@@ -11,8 +11,9 @@
     overflow: hidden; /* Clear the float */
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #cadee8;
     border-radius: 5px;
+    border: 2px solid rgb(117, 45, 101);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
     
 }
